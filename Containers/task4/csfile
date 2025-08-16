@@ -1,0 +1,3 @@
+FROM debian:bookworm
+COPY ./counter-service /counter-service
+RUN cd counter-service && apt update && apt install -y build-essential && make

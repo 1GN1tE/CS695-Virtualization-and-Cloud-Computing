@@ -1,0 +1,3 @@
+FROM debian:bookworm
+COPY ./file.txt /
+RUN echo "Now I am going to rewrite the file" > /file.txt

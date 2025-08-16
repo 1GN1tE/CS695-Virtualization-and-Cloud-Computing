@@ -1,0 +1,4 @@
+FROM debian:bookworm
+RUN apt-get update && apt-get install -y htop
+COPY ./file.txt /
+RUN echo "Now I am going to rewrite the file" > /file.txt
